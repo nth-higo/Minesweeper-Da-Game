@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,6 +10,7 @@
     height: 100%;
     padding: 30px 60px;
 }
+
 .back-video {
     position: fixed;
     top: 0;
@@ -20,6 +21,7 @@
     height: auto;
     z-index: -1;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -27,10 +29,12 @@ nav {
     background-color: transparent;
     color: rgba(255, 255, 255, 0.546);
 }
+
 img {
     width: 10rem;
-    
+
 }
+
 ul {
     top: -1rem;
     display: flex;
@@ -40,15 +44,17 @@ ul {
     border-radius: 8px;
     position: relative;
 }
+
 li {
     list-style: none;
-    padding: 5px  25px;
+    padding: 5px 25px;
     color: #fff;
     font-weight: 900;
     z-index: 1;
     cursor: pointer;
     position: relative;
 }
+
 .nav-animate {
     position: absolute;
     left: -20%;
@@ -57,23 +63,28 @@ li {
     z-index: 0;
     border-radius: 8px;
     transition: .5s;
-}   
-li:nth-child(1):hover ~ .nav-animate {
+}
+
+li:nth-child(1):hover~.nav-animate {
     left: 0;
     width: 24%;
 }
-li:nth-child(2):hover ~ .nav-animate {
+
+li:nth-child(2):hover~.nav-animate {
     left: 25%;
     width: 22%;
 }
-li:nth-child(3):hover ~ .nav-animate {
+
+li:nth-child(3):hover~.nav-animate {
     left: 48%;
     width: 20%;
 }
-li:nth-child(4):hover ~ .nav-animate {
+
+li:nth-child(4):hover~.nav-animate {
     left: 68%;
     width: 32%;
 }
+
 h1 {
     top: -2rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -83,16 +94,19 @@ h1 {
     -webkit-text-stroke: 3px #fff;
     line-height: 20px;
 }
+
 p {
     font-weight: 250;
     font-size: 1.5rem;
 }
+
 .container {
     justify-content: center;
     align-items: center;
     display: flex;
     gap: 10px;
 }
+
 .sideBar {
     display: flex;
     flex-direction: column;
@@ -103,6 +117,7 @@ p {
     background-color: rgba(58, 54, 56, 0.897);
     border-radius: 5px;
 }
+
 .timer {
     display: flex;
     flex-direction: column;
@@ -113,6 +128,7 @@ p {
     background: linear-gradient(30deg, #63c3ec, #f88aa0);
     border-radius: 2px;
 }
+
 .stats {
     display: flex;
     flex-direction: column;
@@ -131,30 +147,39 @@ p {
     background: rgba(58, 54, 56, 0.897);
     border-radius: 5px;
 }
+
 .grid {
     display: grid;
     flex-wrap: wrap;
     padding: 10px;
 }
+
 .square {
     width: 25px;
     height: 25px;
-    background: #ffff ;
+    background: #ffff;
     margin: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
+
 }
+
 .square img {
     height: auto;
     max-width: 75%;
 }
+
 .square.discovered {
     background: linear-gradient(45deg, #f5a0b1, #7b31e367);
 }
+
 .square:hover {
     background: linear-gradient(45deg, #f5a0b1, #7b31e367);
+    cursor: pointer;
 }
+
 .buttons {
     display: flex;
     flex-direction: column;
@@ -164,33 +189,36 @@ p {
     border-radius: 5px;
     margin: 10px;
 }
+
 .buttons button {
     font-size: 25px;
     font-weight: 800;
     cursor: pointer;
-    background: linear-gradient(#fff) ;
+    background: linear-gradient(#fff);
     border: none;
     border-radius: 5px;
-    color:rgb(69, 7, 40);
+    color: rgb(69, 7, 40);
 }
+
 .buttons button:hover {
-    color:rgb(199, 240, 240);
-    background: linear-gradient(45deg, #f5a0b1, #7b31e367) ;
+    color: rgb(199, 240, 240);
+    background: linear-gradient(45deg, #f5a0b1, #7b31e367);
     left: -20%;
     height: 100%;
     z-index: 0;
     border-radius: 8px;
     transition: 0.5s;
 }
+
 .newGame {
     display: flex;
     margin-top: 20px;
     flex-direction: column;
 }
+
 .newGame select {
     font-size: 20px;
     margin-bottom: 5px;
     text-align: center;
     font-weight: 500;
 }
-
