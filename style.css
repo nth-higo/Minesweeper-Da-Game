@@ -3,8 +3,60 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
+    font-family: 'Bruno Ace', cursive;
+}
+/*______________ Page header______________ */
+header {
+    width: 100%;
+    height: 50px;
+    background:rgba(0, 0, 0, 0.625);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.logo {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.692);
+    -webkit-text-stroke: 1px #fff;
+}
+.nav-bar ul{
+    display: flex;
+    list-style: none;
 }
 
+.nav-bar ul li a{
+    text-decoration: none;
+    display: block;
+    color: azure;
+    font-size: 20px;
+    padding: 10px 20px ;
+    border-radius: 5px;
+    transition: 0.8s;
+    margin: 0 5px;
+}
+
+.nav-animate {
+    position: absolute;
+    left: -20%;
+    height: 100%;
+    background: linear-gradient(45deg, #c8519e, #370d73d2);
+    z-index: 0;
+    border-radius: 8px;
+    transition: .5s;
+} 
+
+.nav-bar ul li a:hover {
+    background: linear-gradient(45deg, #f5a0b1, #7b31e367) ;
+}
+
+.nav-bar ul li a.active{
+    background: linear-gradient(45deg, #f5a0b1, #7b31e367) ;
+}
+
+/*______________ Main______________ */
 .main {
     width: 100%;
     height: 100%;
@@ -20,151 +72,6 @@
     height: auto;
     z-index: -1;
 }
-<<<<<<< Updated upstream
-nav {
-=======
-
-/*---navigation bar*/
-.nav-bar {
->>>>>>> Stashed changes
-    display: flex;
-    justify-content: space-between;
-    font-size: 1rem;
-    background-color: transparent;
-    color: rgba(255, 255, 255, 0.546);
-}
-<<<<<<< Updated upstream
-img {
-    width: 10rem;
-    
-}
-ul {
-=======
-.nav-bar ul {
->>>>>>> Stashed changes
-    top: -1rem;
-    display: flex;
-    align-items: center;
-    height: 3rem;
-    background-color: rgba(128, 110, 119, 0.737);
-    border-radius: 8px;
-    position: relative;
-}
-<<<<<<< Updated upstream
-li {
-    list-style: none;
-    padding: 5px  25px;
-=======
-.nav-bar li {
-    list-style: none;
-}
-.nav-bar a {
-    text-decoration: none;
-    padding: 5px 25px;
->>>>>>> Stashed changes
-    color: #fff;
-    font-weight: 900;
-    z-index: 1;
-    cursor: pointer;
-    position: relative;
-}
-.nav-animate {
-    position: absolute;
-    left: -20%;
-    height: 100%;
-    background: linear-gradient(45deg, #c8519e, #370d73d2);
-    z-index: 0;
-    border-radius: 8px;
-    transition: .5s;
-<<<<<<< Updated upstream
-}   
-li:nth-child(1):hover ~ .nav-animate {
-    left: 0;
-    width: 24%;
-}
-li:nth-child(2):hover ~ .nav-animate {
-    left: 25%;
-    width: 22%;
-}
-li:nth-child(3):hover ~ .nav-animate {
-    left: 48%;
-    width: 20%;
-}
-li:nth-child(4):hover ~ .nav-animate {
-    left: 68%;
-    width: 32%;
-}
-h1 {
-=======
-}
-li:nth-child(1):hover~.nav-animate {
-    left: 0;
-    width: 24%;
-}
-li:nth-child(2):hover~.nav-animate {
-    left: 25%;
-    width: 22%;
-}
-li:nth-child(3):hover~.nav-animate {
-    left: 48%;
-    width: 20%;
-}
-li:nth-child(4):hover~.nav-animate {
-    left: 68%;
-    width: 32%;
-}
-.nav-bar h1 {
->>>>>>> Stashed changes
-    top: -2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 3rem;
-    background-color: transparent;
-    color: rgba(255, 255, 255, 0.692);
-    -webkit-text-stroke: 3px #fff;
-    line-height: 20px;
-}
-<<<<<<< Updated upstream
-p {
-    font-weight: 250;
-    font-size: 1.5rem;
-}
-=======
-
-.nav-bar .toggleBtn {
-    color: #fff;
-    font-size: 2rem;
-    cursor: pointer;
-    display: none;
-}
-
-
-/*---Dropdown Menu---*/
-.dropDown_menu {
-    display: none;
-    position: absolute;
-    right: 2rem;
-    height: 0;
-    width: 300px;
-    background: rgba(58, 54, 56, 0.897);
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.dropDown_menu .open{
-    height: 240px;
-}
-.dropDown_menu li {
-    padding: 1rem;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-
-
-/*---Content---*/
->>>>>>> Stashed changes
 .container {
     justify-content: center;
     align-items: center;
@@ -180,8 +87,6 @@ p {
     height: auto;
     background-color: rgba(58, 54, 56, 0.897);
     border-radius: 5px;
-    font-weight: 250;
-    font-size: 1.5rem;
 }
 .timer {
     display: flex;
@@ -204,27 +109,7 @@ p {
     border-radius: 2px;
     margin: 10px;
 }
-.buttons button {
-    font-size: 25px;
-    font-weight: 800;
-    cursor: pointer;
-    background: linear-gradient(#fff);
-    border: none;
-    border-radius: 5px;
-    color: rgb(69, 7, 40);
-}
 
-.buttons button:hover {
-    color: azure;
-    background: linear-gradient(45deg, #f5a0b1, #7b31e367);
-    left: -20%;
-    height: 100%;
-    z-index: 0;
-    border-radius: 8px;
-    transition: 0.5s;
-}
-
-/*---Game section---*/
 .board {
     display: flex;
     flex-direction: column;
@@ -244,6 +129,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .square img {
     height: auto;
@@ -264,9 +150,9 @@ p {
     border-radius: 5px;
     margin: 10px;
 }
-<<<<<<< Updated upstream
 .buttons button {
-    font-size: 25px;
+    height: 50px;
+    font-size: 20px;
     font-weight: 800;
     cursor: pointer;
     background: linear-gradient(#fff) ;
@@ -275,17 +161,14 @@ p {
     color:rgb(69, 7, 40);
 }
 .buttons button:hover {
-    color:rgb(199, 240, 240);
+    color: azure;
     background: linear-gradient(45deg, #f5a0b1, #7b31e367) ;
     left: -20%;
-    height: 100%;
+    height: 50px;
     z-index: 0;
     border-radius: 8px;
     transition: 0.5s;
 }
-=======
-
->>>>>>> Stashed changes
 .newGame {
     display: flex;
     margin-top: 20px;
@@ -298,18 +181,47 @@ p {
     font-weight: 500;
 }
 
-<<<<<<< Updated upstream
-=======
-/*Responsive*/
-@media screen and (max-width: 900px) {
-    .nav-bar .links {
-        display: none;
+/*______________ Respinsive______________ */
+@media only screen and (max-width: 900px){
+    .hamburger {
+        display:  block;
+        cursor: pointer;
+
     }
-    .nav-bar .toggleBtn {
-        display: block;
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: azure;
+        margin: 6px 0;
     }
-    .nav-bar .dropDown_menu {
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 50px;
+        left: 60%;
+        right: 0;
+        width: 40%;
+        background:rgba(0, 0, 0, 0.625);
+        transition: 0.5s;
+        backdrop-filter: blur(5px);
+         overflow: hidden;
+    }
+    .nav-bar.active {
+        height: 450px;
+    }
+    .nav-bar ul {
         display: block;
+        width: fit-content;
+        margin: 50px auto 10px auto;
+        text-align: center;
+        transform: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a {
+        padding: 20px 20px;
+        margin-bottom: 20px;
     }
 }
->>>>>>> Stashed changes

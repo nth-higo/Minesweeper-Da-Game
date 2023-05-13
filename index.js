@@ -1,4 +1,3 @@
-
 const board = document.getElementById('board')
 const grid = document.getElementById('grid')
 
@@ -343,6 +342,10 @@ const startGame = () => {
 
 startGame()
 
-
+const hamburger = document.getElementById('hamburger')
+hamburger.onclick = function() {
+    navBar = document.getElementById('nav-bar')
+    navBar.classList.toggle('active')
+}
 
 
