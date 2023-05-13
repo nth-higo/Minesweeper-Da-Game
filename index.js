@@ -1,3 +1,4 @@
+
 const board = document.getElementById('board')
 const grid = document.getElementById('grid')
 
